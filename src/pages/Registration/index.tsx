@@ -113,12 +113,12 @@ const Registration: React.FC = () => {
             >
               {fileNameUrl ? (
                 <img
-                  src={`http://localhost:8000/uploads/${fileNameUrl}`}
+                  src={`${import.meta.env.VITE_API_URL}/uploads/${fileNameUrl}`}
                   alt='user icon'
                 />
               ) : (
                 <img
-                  src={`http://localhost:8000/uploads/noavatar.png`}
+                  src={`${import.meta.env.VITE_API_URL}/uploads/noavatar.png`}
                   alt='user icon'
                 />
               )}

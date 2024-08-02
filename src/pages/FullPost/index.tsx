@@ -71,12 +71,16 @@ const FullPost: React.FC = () => {
                   <div className='comments__icon-user'>
                     {imageUrl ? (
                       <img
-                        src={`http://localhost:8000/uploads/${imageUrl}`}
+                        src={`${
+                          import.meta.env.VITE_API_URL
+                        }/uploads/${imageUrl}`}
                         alt='icon user'
                       />
                     ) : (
                       <img
-                        src={`http://localhost:8000/uploads/noavatar.png`}
+                        src={`${
+                          import.meta.env.VITE_API_URL
+                        }/uploads/noavatar.png`}
                         alt='icon user'
                       />
                     )}
