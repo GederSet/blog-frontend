@@ -73,14 +73,14 @@ const FullPost: React.FC = () => {
                       <img
                         src={`${
                           import.meta.env.VITE_API_URL
-                        }/uploads/${imageUrl}`}
+                        }uploads/${imageUrl}`}
                         alt='icon user'
                       />
                     ) : (
                       <img
                         src={`${
                           import.meta.env.VITE_API_URL
-                        }/uploads/noavatar.png`}
+                        }uploads/noavatar.png`}
                         alt='icon user'
                       />
                     )}
