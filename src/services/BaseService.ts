@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { parseCookies } from 'nookies'
 
-const baseUrl = 'http://localhost:8000'
+const baseUrl = process.env.REACT_APP_API_URL
 
 export const baseApi = createApi({
   tagTypes: ['User', 'Post', 'File', 'Comment'],
