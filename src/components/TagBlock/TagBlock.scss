@@ -1,0 +1,16 @@
+.tags {
+  // .tags__row
+  &__row {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    div {
+      min-width: initial !important;
+    }
+  }
+
+  // .tags__text
+  &__text {
+    font-size: 20px;
+  }
+}

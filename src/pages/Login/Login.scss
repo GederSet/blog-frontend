@@ -1,0 +1,63 @@
+$blue: #4361ee;
+
+.login {
+  padding: 40px 0;
+  // .login__container
+
+  &__container {
+  }
+
+  // .login__body
+
+  &__body {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 1px solid #c9c9c9;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+  }
+
+  // .login__title
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  // .login__input
+
+  &__input {
+    .MuiOutlinedInput-root {
+      border-radius: 7px;
+    }
+  }
+
+  //  .login__button
+  &__button {
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  // .login__link
+  &__link {
+    color: $blue;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .login {
+    // .login__body
+    &__body {
+      padding: 40px 30px;
+    }
+    // .login__input
+    &__input {
+      padding: 13px;
+    }
+  }
+}

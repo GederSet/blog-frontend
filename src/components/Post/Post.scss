@@ -1,0 +1,186 @@
+$blue: #4361ee;
+
+.home {
+  // .home__post
+
+  &__post {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    background-color: white;
+  }
+  &__post:hover {
+    border: 1px solid $blue;
+    outline: 1px solid $blue;
+    .post__panel {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.post {
+  position: relative;
+  // .post__image
+
+  &__image {
+    overflow: hidden;
+    height: 350px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__image.full {
+    height: 600px;
+  }
+
+  // .post__body
+
+  &__body {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  // .post__icon-user
+
+  &__icon-user {
+    border-radius: 50%;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .post__box
+
+  &__box {
+    padding-top: 6px;
+  }
+
+  // .post__date
+
+  &__date,
+  &__tag,
+  &__count {
+    color: #8d8d8d;
+    font-size: 16px;
+  }
+
+  &__date {
+    margin-bottom: 15px;
+  }
+
+  // .post__title
+
+  &__title {
+    word-break: break-all;
+    line-height: 1.2;
+    display: block;
+    font-weight: 700;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 18px;
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__title.full {
+    &:hover {
+      color: black;
+    }
+  }
+
+  // .post__tags
+
+  &__tags {
+    display: flex;
+    gap: 5px 10px;
+    flex-wrap: wrap;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  // .post__tag
+
+  // .post__text
+  &__text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  // .post__rows
+
+  &__rows {
+    display: flex;
+    gap: 10px;
+  }
+
+  // .post__row
+
+  &__row {
+    display: flex;
+    gap: 5px;
+  }
+
+  // .post__icon
+
+  &__icon {
+    width: 17px;
+  }
+
+  // .post__count
+
+  &__count {
+  }
+
+  // .post__panel
+
+  &__panel {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    transition: all 0.2s ease 0s;
+  }
+
+  // .post__edit
+
+  &__edit,
+  &__delete {
+    width: 21px;
+    height: 21px;
+  }
+
+  &__edit:hover svg {
+    fill: $blue;
+  }
+
+  // .post__delete
+
+  &__delete:hover svg {
+    fill: rgb(255, 79, 79);
+  }
+}
+
+@media (max-width: 600px) {
+  .post {
+    &__image.full {
+      height: 350px;
+    }
+  }
+}

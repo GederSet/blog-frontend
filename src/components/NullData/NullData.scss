@@ -1,0 +1,18 @@
+.null-data {
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+
+  // .null-data__title
+  &__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  // .null-data__text
+  &__text {
+    line-height: 1.2;
+  }
+}

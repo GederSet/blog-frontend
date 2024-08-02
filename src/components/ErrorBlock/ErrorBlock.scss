@@ -1,0 +1,18 @@
+.error-block {
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+
+  // .error-block__title
+  &__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  // .error-block__text
+  &__text {
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,139 @@
+.add-post {
+  padding: 50px 0;
+  // .add-post__container
+
+  &__container {
+  }
+
+  // .add-post__body
+
+  &__body {
+    padding: 35px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  // .add-post__img-button
+  &__img-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  // add-post__img-button_remove
+  &__img-button_remove {
+    color: white;
+    background-color: rgb(255, 93, 93);
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background-color: rgb(219, 70, 70);
+    }
+  }
+
+  // .add-post__img
+
+  &__img {
+    max-width: 100%;
+    margin: 20px 0;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .add-post__content
+
+  &__content {
+  }
+
+  // .add-post__input_title
+  &__input_title {
+    margin-bottom: 10px !important;
+    input {
+      font-size: 40px;
+      font-weight: 900;
+    }
+
+    div {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  // .add-post__input_text
+  &__input_text {
+    margin-bottom: 30px !important;
+  }
+
+  // .add-post__input
+
+  &__input {
+  }
+
+  // .add-post__editor
+
+  &__editor {
+    margin-bottom: 30px;
+  }
+
+  // .add-post__buttons
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  // .add-post__button
+
+  &__button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  // .form-error_title
+  .form-error_title {
+    margin-top: 15px;
+  }
+  // .form-error_text
+  .form-error_text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .add-post {
+    padding: 20px 0;
+    // .add-post__input_title
+    &__input_title {
+      margin-bottom: 10px !important;
+      input {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .add-post {
+    padding: 0;
+
+    // .add-post__container
+    &__container {
+      background-color: white;
+    }
+    // .add-post__body
+    &__body {
+      padding: 30px 0px;
+      border-radius: 5px;
+    }
+    // .add-post__buttons
+    &__buttons {
+      flex-direction: column;
+    }
+  }
+}
