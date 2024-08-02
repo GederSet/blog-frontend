@@ -18,12 +18,12 @@ export const CommentsBlock: React.FC<ServerCommentType> = ({
           <Skeleton variant='circular' width={40} height={40} />
         ) : user?.imageUrl ? (
           <img
-            src={`${import.meta.env.VITE_API_URL}/uploads/${user?.imageUrl}`}
+            src={`${import.meta.env.VITE_API_URL}uploads/${user?.imageUrl}`}
             alt='icon user'
           />
         ) : (
           <img
-            src={`${import.meta.env.VITE_API_URL}/uploads/noavatar.png`}
+            src={`${import.meta.env.VITE_API_URL}uploads/noavatar.png`}
             alt='icon user'
           />
         )}

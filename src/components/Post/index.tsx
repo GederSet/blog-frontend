@@ -31,7 +31,7 @@ export const Post: React.FC<ServerPostType> = ({
       {fileName && (
         <div className={clsx('post__image', { full: isFullPost })}>
           <img
-            src={`${import.meta.env.VITE_API_URL}/uploads/${fileName}`}
+            src={`${import.meta.env.VITE_API_URL}uploads/${fileName}`}
             alt='post image'
           />
         </div>
@@ -40,12 +40,12 @@ export const Post: React.FC<ServerPostType> = ({
         <div className='post__icon-user'>
           {user?.imageUrl ? (
             <img
-              src={`${import.meta.env.VITE_API_URL}/uploads/${user.imageUrl}`}
+              src={`${import.meta.env.VITE_API_URL}uploads/${user.imageUrl}`}
               alt='icon user'
             />
           ) : (
             <img
-              src={`${import.meta.env.VITE_API_URL}/uploads/noavatar.png`}
+              src={`${import.meta.env.VITE_API_URL}uploads/noavatar.png`}
               alt='icon user'
             />
           )}
